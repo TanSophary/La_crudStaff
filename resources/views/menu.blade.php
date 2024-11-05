@@ -30,15 +30,12 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar Menu -->
             <nav class="col-md-3 col-lg-2 left_model">
                 <h5 class="text-center mb-4">Menu</h5>
                 <a href="/dashboard">Dashboard</a>
                 <a href="/">Employee Information</a>
-                <!-- Add more links here -->
             </nav>
 
-            <!-- Main Content Area -->
             <div class="col-md-9 col-lg-10 content-area">
                 @yield('index')
                 @yield('add_new')

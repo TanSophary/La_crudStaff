@@ -15,11 +15,9 @@
         </div>
         <div class="card mb-5 shadow">
             <div class="row g-0">
-                <!-- Profile Image -->
                 <div class="col-md-4 text-center d-flex align-items-center justify-content-center bg-primary bg-opacity-10 p-3">
                     <img src="{{ asset($objStaff[0]->profile) }}" class="img-fluid rounded-circle" alt="Employee Image" style="width: 250px; height: 250px;">
                 </div>
-                <!-- Staff Details -->
                 <div class="col-md-8">
                     <div class="card-body p-4">
                         <h3 class="card-title text-primary mb-3">Overview</h3>

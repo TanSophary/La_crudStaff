@@ -39,7 +39,7 @@ class StaffController extends Controller
         $objStaff = DB::table('staff')
                     ->where('id',$id)
                     ->get();
-        // return $objProduct;
+        // return $objStaff;
         return view('detail',['objStaff'=>$objStaff]);
     }
     public function updateStaff($id){

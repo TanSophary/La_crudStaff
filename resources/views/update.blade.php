@@ -12,13 +12,11 @@
             @csrf
             <input type="hidden" name="edit_id" value="{{ $objStaff[0]->id }}">
             
-            <!-- Name Field -->
             <div class="mb-4">
                 <label for="name" class="form-label fw-bold">Employee Name</label>
                 <input type="text" name="edit_name" id="name" class="form-control rounded-pill" placeholder="Enter name" value="{{ $objStaff[0]->name }}" required>
             </div>
 
-            <!-- Gender Field -->
             <div class="mb-4">
                 <label for="gender" class="form-label fw-bold">Gender</label>
                 <select id="gender" name="edit_gender" class="form-select rounded-pill">
@@ -27,25 +25,21 @@
                 </select>
             </div>
 
-            <!-- Position Field -->
             <div class="mb-4">
                 <label for="position" class="form-label fw-bold">Position</label>
                 <input type="text" name="edit_position" id="position" class="form-control rounded-pill" placeholder="Enter position" value="{{ $objStaff[0]->position }}" required>
             </div>
 
-            <!-- Phone Number Field -->
             <div class="mb-4">
                 <label for="phone" class="form-label fw-bold">Phone Number</label>
                 <input type="text" name="edit_phone" id="phone" class="form-control rounded-pill" placeholder="Enter phone number" value="{{ $objStaff[0]->phone }}" required>
             </div>
 
-            <!-- Address Field -->
             <div class="mb-4">
                 <label for="address" class="form-label fw-bold">Address</label>
                 <input type="text" name="edit_address" id="address" class="form-control rounded-pill" placeholder="Enter address" value="{{ $objStaff[0]->address }}" required>
             </div>
 
-            <!-- Profile Image Upload -->
             <div class="mb-4">
                 <label for="profile" class="form-label fw-bold">Profile Image</label>
                 @if($objStaff[0]->profile)
@@ -57,7 +51,6 @@
                 <input type="file" name="profile" id="profile" class="form-control rounded-pill" placeholder="Upload new profile image">
             </div>
 
-            <!-- Submit Button -->
             <div class="text-center">
                 <button type="submit" class="btn btn-primary rounded-pill px-5">Confirm Update</button>
             </div>
